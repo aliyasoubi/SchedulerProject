@@ -1,0 +1,34 @@
+
+//1 Step - install python last version on windows
+// and Add Python to PATH
+// use Windows Shell in Windows 10
+// Check Python Version
+py --version
+
+//Get this file
+  https://bootstrap.pypa.io/get-pip.py
+//install it
+  python get-pip.py
+// virtualenv and virtualenvwrapper provide a dedicated environment for each Django project you create
+  pip install virtualenvwrapper-win
+  mkvirtualenv myproject
+  
+//The virtual environment will be activated automatically and you’ll see “(myproject)” next to the command prompt to designate that.
+//If you start a new command prompt, you’ll need to activate the environment again using:
+	workon myproject
+
+//Install Django
+  pip install Django
+
+// check django version
+python -m django --version
+
+//cd into a directory where you’d like to store your code, then run the following command:
+django-admin startproject mysite
+
+//run project
+python manage.py runserver
+
+//To create your app, make sure you’re in the same directory as manage.py and type this command
+python manage.py startapp polls
+
